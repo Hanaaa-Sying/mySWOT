@@ -1,0 +1,6 @@
+interface:
+  display_name: "mySWOT"
+  short_description: "通过四维多轮追问、授权个人资料检索与可靠外部资讯，帮助理清决策取舍"
+  default_prompt: "请用 $myswot 帮我理清当前决策，充分追问四个维度，结合授权资料和可靠资讯梳理选项，由我作出选择。"
+policy:
+  allow_implicit_invocation: true
