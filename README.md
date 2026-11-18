@@ -1,10 +1,10 @@
 # mySWOT
 
-**A question-led decision companion that connects your experiences, permissioned personal notes, and current external evidence.**
+**Explore your strengths and difficulties at this stage of life, discover possible strategies, and examine the ones you are already pursuing.**
 
 [中文说明](README.zh-CN.md) · [Illustrative example](examples/career-decision.md) · [Evaluation protocol](evals/README.md)
 
-mySWOT helps you investigate a career, study, personal, or project decision before settling on a short list of options. It asks follow-up questions, checks assumptions, and shows trade-offs. You make the decision.
+You can start with a recent experience, a shift in your surroundings, or a direction you have already invested in. mySWOT draws out what you bring to that situation and what is changing around you. It also supports concrete career, study, and project decisions.
 
 ## What it does
 
@@ -29,7 +29,7 @@ The current package is under [`skills/myswot`](skills/myswot/SKILL.md). Place th
 For a project-scoped Codex installation, copy `skills/myswot` into `<your-project>/.agents/skills/myswot`. Discovery of this public package from that location was verified locally. Start with:
 
 ```text
-Use $myswot to help me think through whether to pursue further study or start working.
+Use $myswot to take stock of where I am now and explore opportunities and challenges around me.
 Ask follow-up questions before forming options. Ask before reading any personal notes.
 ```
 
@@ -39,7 +39,7 @@ The skill instructions and default interaction language are Chinese. You can req
 
 ```mermaid
 flowchart TD
-    A[Define the decision and personal criteria] --> B[Explore S / W / O / T over multiple rounds]
+    A[Describe your current stage and what matters to you] --> B[Explore S / W / O / T over multiple rounds]
     B --> C[Recall experiences and identify missing information]
     C --> D[Optional authorized personal-note retrieval for S/W]
     C --> E[External-source research for O/T]
@@ -47,7 +47,7 @@ flowchart TD
     E --> F
     F --> G[Combine factors into action options]
     G --> H[Examine assumptions and trade-offs]
-    H --> I[The user decides]
+    H --> I[Discover new directions and examine current strategies]
 ```
 
 The default is a deep conversation: normally 8–12 substantive exploration rounds across the four dimensions, plus framing and synthesis. This is not a time estimate. You can skip a topic or ask for an early summary; incomplete coverage remains visible.

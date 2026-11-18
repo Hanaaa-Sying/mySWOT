@@ -1,6 +1,6 @@
 # mySWOT
 
-**通过追问、获准读取的个人笔记和可靠外部资讯，帮助你发现遗漏条件、形成选项，并自己作出决定。**
+**盘点你在这个阶段的优势与困难，结合当下环境的机会与挑战，发现新的行动方向，也检验正在走的路。**
 
 [English overview](README.md) · [虚构示例](examples/career-decision.md) · [评测方案](evals/README.md)
 
@@ -31,7 +31,7 @@ git clone https://github.com/Hanaaa-Sying/mySWOT.git
 Codex 项目级安装可将 `skills/myswot` 复制到目标项目的 `.agents/skills/myswot`。已于 2026-11-18 实测公开版可从该位置加载为已启用的项目级 skill，无加载错误。调用示例：
 
 ```text
-请用 $myswot 帮我理清：我应该继续深造还是先工作？
+请用 $myswot 陪我做一次阶段盘点。我想了解自己现在的优势与困难，也想看看眼前有哪些机会和挑战。
 先通过追问了解我的情况；如果需要查看个人笔记，请先询问读取范围。
 ```
 
