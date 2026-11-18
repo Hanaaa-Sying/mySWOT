@@ -9,6 +9,7 @@ mySWOT helps you investigate a career, study, personal, or project decision befo
 ## What it does
 
 - Explores Strengths, Weaknesses, Opportunities, and Threats separately, usually for 2–3 rounds each, with 2–3 related questions per round.
+- Checks imminent commitment deadlines and potentially disqualifying budget or eligibility constraints before prolonged exploration of a specific option.
 - Starts with your own recollection. With explicit permission, it can use available personal knowledge sources to surface forgotten experiences and possible S/W clues.
 - Searches external sources after your first O/T responses, distinguishes source facts from AI interpretation, and checks whether the findings apply to you.
 - Connects confirmed factors into SO/WO/ST/WT action options, then examines costs, assumptions, reversibility, and trade-offs without ranking your life choices.
@@ -68,11 +69,17 @@ These are instructions for the host agent, not an independently enforced securit
 | Local Codex skill discovery | Original user installation verified on 2026-11-17; public `myswot` package verified as enabled at project scope on 2026-11-18, with no skill-load errors |
 | YAML and local reference integrity | Checked |
 | Scenario review | Manual review using fictional situations |
-| Comparative behavioral evaluations | Protocol provided; not yet run |
+| Comparative behavioral evaluations | One synthetic graduation-decision case, one full run per condition, plus targeted regression checks; see the report below |
 | Real-user outcomes | Not yet measured |
 | Other agents and knowledge connectors | Not tested end to end |
 
 The brand and display name are **mySWOT**. The technical identifier and installable folder are **`myswot`**, following the lowercase-name requirement in the [Agent Skills specification](https://agentskills.io/specification). The public package passes the skill structure validator. Do not install it alongside the original mixed-case package on case-insensitive filesystems; compare and choose one version.
+
+### First evaluation: useful detail, substantial cost
+
+In the first synthetic comparison, the original skill used **13 assistant turns / 4,325 non-whitespace characters**, versus **7 turns / 2,315 characters** without a skill. Both handled the main cost, scholarship, deadline, and note-attribution traps correctly. The skill surfaced additional application-timing and exploration-funding questions, but reached the full funding gap later. This is not evidence of overall superiority.
+
+The revision moves concrete deadlines and feasibility checks earlier while preserving deep quadrant exploration. A fresh three-turn checkpoint run reached the full estimated funding gap in turn 3, versus turn 10 in the original run. This partial rerun does **not** establish shorter full interviews or better real-world decisions. It also exposed uncertainty-wording issues, which were addressed in a narrow follow-up. [Full report, transcripts, fictional fixtures, and version snapshots](evals/results/2026-11-18-graduation/report.zh-CN.md).
 
 ## Background
 

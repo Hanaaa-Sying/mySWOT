@@ -1,0 +1,2 @@
+# Preserve exact evaluation evidence bytes so published SHA-256 manifests remain valid.
+evals/results/** -text

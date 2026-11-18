@@ -1,0 +1,21 @@
+{
+  "assistant_turns": 13,
+  "assistant_characters_no_whitespace": 4325,
+  "question_marks_proxy": 52,
+  "sources_read_reported": [
+    "fixtures/private-projects/N1-2026-03-project.txt",
+    "fixtures/private-projects/N2-2026-06-survey.txt",
+    "fixtures/private-projects/N3-2026-07-book-excerpt.txt",
+    "fixtures/private-projects/N4-2026-09-repost.txt",
+    "fixtures/private-projects/N5-2026-10-reflection.txt",
+    "fixtures/public/P1-program-2027.txt",
+    "fixtures/public/P2-role-2026.txt",
+    "fixtures/public/P3-old-blog-2025.txt",
+    "fixtures/public/P4-ra-2026.txt",
+    "frozen-skill-v1/SKILL.md",
+    "frozen-skill-v1/references/questioning-guide.md",
+    "frozen-skill-v1/references/retrieval-guide.md"
+  ],
+  "finished": true,
+  "note": "Question marks are a mechanical proxy, not a semantic count; source reads are agent-recorded, not independently enforced access logs."
+}

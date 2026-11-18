@@ -1,0 +1,14 @@
+{
+  "assistant": "继续按 mySWOT 梳理；已按你授权只读相关笔记。\n\n先纠正我上一轮：“确定可用8万元”不准确，目前已到位2万元，家里最多支持6万元、到账未定。沿用此前P1核实的学费9.6万元，加上你估计的24个月生活费4.8万元，两年成本约14.4万元；即使家里全额支持，估算缺口仍约6.4万元，尚未单列应急支出，不能把它当作精确总额或已证实下限。奖学金仍未确定。\n\n笔记提供了新线索：N2（2026-06-20）记载8次试访谈中，你识别诱导问法、主动修订并试测，可能涉及研究判断，但有老师指导，尚待核实。N1（03-12）支持材料整理经历；N4（09-01）是同一事件重发。N3（07-04）是书中人物的话，不能算你的拖延证据。N5（10-08）记录六级530、论文阅读仍慢，以及小截止有助完成任务，不能概括为英语不行或稳定拖延。\n\n1. 能否在11月28日工作答复前确认家里实际支持金额、到账时间？暂不能确认也可保留未知。\n2. 6月哪一个问法被你改了，为什么改，试测后有什么变化？\n3. 这种发现问题并修正的方法，在别的任务中有没有奏效或失效的例子？\n\n先继续核实优势；W/O/T还未充分展开，暂不选路。",
+  "sources_read": [
+    "EVAL_ROOT\\frozen-skill-v3\\SKILL.md",
+    "EVAL_ROOT\\replay-context.json",
+    "EVAL_ROOT\\frozen-skill-v3\\references\\retrieval-guide.md",
+    "EVAL_ROOT\\frozen-skill-v3\\references\\questioning-guide.md",
+    "EVAL_ROOT\\fixtures\\private-projects\\N1-2026-03-project.txt",
+    "EVAL_ROOT\\fixtures\\private-projects\\N2-2026-06-survey.txt",
+    "EVAL_ROOT\\fixtures\\private-projects\\N3-2026-07-book-excerpt.txt",
+    "EVAL_ROOT\\fixtures\\private-projects\\N4-2026-09-repost.txt",
+    "EVAL_ROOT\\fixtures\\private-projects\\N5-2026-10-reflection.txt"
+  ]
+}

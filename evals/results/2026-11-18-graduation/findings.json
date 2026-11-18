@@ -1,0 +1,437 @@
+{
+  "scope": {
+    "fictional": true,
+    "conditions": "只使用C1/C2编码，不推断组别或方法",
+    "read_scope": "grading-rubric.md、oracle.json、fixtures全部9份、C1/C2 transcript.json与metrics.json",
+    "turn_notation": "A为该行助手；U为该行用户。U(n+1)回答A(n)，U1为共同初始请求。最终输出C1=A13，C2=A7。"
+  },
+  "overall": "本单场景两组均正确化解核心费用、时序和来源陷阱；C1在决策条件核实与最终交接上更细，C2更早识别决定性约束且记录负担较低。没有证据支持C1整体明显胜出；其局部细化伴随额外6轮和2010个非空白字符。也不能仅凭更短认定C2真实体验更好。",
+  "per_fact": [
+    {
+      "id": "F01",
+      "topic": "三年目标、读博未定、成长与稳定",
+      "C1": {
+        "appearance_or_read": "U2；A2复述",
+        "personal_confirmation_or_applicability": "U2本人陈述",
+        "final_adoption": "正确采用：A13“三年内靠近用户洞察或应用研究，兼顾成长、稳定”；未重述读博未定"
+      },
+      "C2": {
+        "appearance_or_read": "U3；A3复述",
+        "personal_confirmation_or_applicability": "U3确认方向与读博未定；U7明确在资金底线内偏好方向和反馈成长；“基本稳定”未单独确认",
+        "final_adoption": "部分采用：A7围绕方向、方法成长和收入安排；未重复三年时限或读博未定"
+      }
+    },
+    {
+      "id": "F02",
+      "topic": "工作回复、入职及延期/退出未知",
+      "C1": {
+        "appearance_or_read": "U7给11月28日和明年3月；A7确认体验晚于回复；A11首次复述具体回复日",
+        "personal_confirmation_or_applicability": "U7；U12确认愿问延期但未获同意",
+        "final_adoption": "正确采用：A13未获延期仍按11月28日，另查接受后退出条件；未重述3月入职"
+      },
+      "C2": {
+        "appearance_or_read": "A3询问各选项最晚决定时间；U4给11月28日和明年3月；A5首次复述具体回复日",
+        "personal_confirmation_or_applicability": "U4；尚无延期同意或可撤回承诺证据",
+        "final_adoption": "部分采用：A7未批准延期仍按28日；未查接受后退出条件，未重述3月入职"
+      }
+    },
+    {
+      "id": "F03",
+      "topic": "2万存款、6万家庭、8万上限、不借债",
+      "C1": {
+        "appearance_or_read": "U2；A2合计8万",
+        "personal_confirmation_or_applicability": "U2；U11再次确认不借债及完整资金覆盖",
+        "final_adoption": "正确采用：A13用8万上限比较，并将2万/6万分开核实探索用途"
+      },
+      "C2": {
+        "appearance_or_read": "U4；A4合计8万",
+        "personal_confirmation_or_applicability": "U4；U7重申8万和不借债",
+        "final_adoption": "正确采用：A7资金底线及确定资金条件；未保留资金来源拆分"
+      }
+    },
+    {
+      "id": "F04",
+      "topic": "广州2000/月、深圳4500/月为估算",
+      "C1": {
+        "appearance_or_read": "U10；A10计算",
+        "personal_confirmation_or_applicability": "U10估算；U11明确无细分，不是完整预算",
+        "final_adoption": "正确采用相关部分：A13标注“粗算两年14.4万元”，查完整支出；未重复深圳估算"
+      },
+      "C2": {
+        "appearance_or_read": "U4；A4计算",
+        "personal_confirmation_or_applicability": "U4明确均为估算",
+        "final_adoption": "正确采用相关部分：A7保留硕士14.4万成本，并要求到手收入及入职前开销；终段未再强调生活费估算"
+      }
+    },
+    {
+      "id": "F05",
+      "topic": "一年左右独立为偏好而非硬约束",
+      "C1": {
+        "appearance_or_read": "U2；A2区分",
+        "personal_confirmation_or_applicability": "U2本人陈述",
+        "final_adoption": "正确采用：A13“一年左右经济独立可讨论”"
+      },
+      "C2": {
+        "appearance_or_read": "U4",
+        "personal_confirmation_or_applicability": "U4；U7重申",
+        "final_adoption": "正确采用底线与偏好区分：A7不强行排序，不把一年独立设为硬门槛；未重述一年目标"
+      }
+    },
+    {
+      "id": "F06",
+      "topic": "广深偏好、家庭与熟悉、非每日照护、远程出差可讨论",
+      "C1": {
+        "appearance_or_read": "U10全部出现",
+        "personal_confirmation_or_applicability": "U10本人陈述",
+        "final_adoption": "部分采用：A13“未来两年偏好广深”；原因及灵活性未重述"
+      },
+      "C2": {
+        "appearance_or_read": "U4出现地点、非每日照护与远程出差；家庭支持和熟悉的原因未获知",
+        "personal_confirmation_or_applicability": "U4本人陈述",
+        "final_adoption": "未显式采用：A7未提地点偏好；所列现有选项未与之冲突"
+      }
+    },
+    {
+      "id": "F07",
+      "topic": "深圳客户成功9000、3月入职、口头转岗",
+      "C1": {
+        "appearance_or_read": "U7；A7自报读P2；A8解读岗位",
+        "personal_confirmation_or_applicability": "U7本人offer陈述",
+        "final_adoption": "正确采用相关部分：A13已有offer、转岗无书面承诺；未重述薪资地点入职日"
+      },
+      "C2": {
+        "appearance_or_read": "U4；A4自报读P2并解读",
+        "personal_confirmation_or_applicability": "U4本人offer陈述",
+        "final_adoption": "正确采用相关部分：A7任务本身可接受才考虑，转岗未落实不计收益；未重述具体薪资入职日"
+      }
+    },
+    {
+      "id": "F08",
+      "topic": "三次整理表达、同伴反馈、3月证据最强",
+      "C1": {
+        "appearance_or_read": "U2；A3读N1",
+        "personal_confirmation_or_applicability": "U3确认3月具体独立贡献，另两次细节不足",
+        "final_adoption": "正确采用有边界部分：A13材料和访谈整理优势，引用3月；未把三次都当充分举证"
+      },
+      "C2": {
+        "appearance_or_read": "U2“几次课程项目”及3月；A6读N1",
+        "personal_confirmation_or_applicability": "U2本人陈述；没有获得精确“三次”或“3月最能举证”表述",
+        "final_adoption": "部分采用：A7“部分能力证据”；A6明确材料组织表达；未重复次数"
+      }
+    },
+    {
+      "id": "F09",
+      "topic": "回归属同伴，自己只承担整理比较表达",
+      "C1": {
+        "appearance_or_read": "U2；U3；A3读N1",
+        "personal_confirmation_or_applicability": "U3明确具体整理为自己完成、模型为同伴",
+        "final_adoption": "正确保留边界：A13优势只列整理和访谈，统计基础不足；没有再明确写同伴完成回归"
+      },
+      "C2": {
+        "appearance_or_read": "U2；A6读N1并说“不能算你的能力”",
+        "personal_confirmation_or_applicability": "U2本人陈述",
+        "final_adoption": "未显式重述，未错误归功：A7只称“部分能力证据”，方法训练仍待做"
+      }
+    },
+    {
+      "id": "F10",
+      "topic": "6月8次访谈、自发现诱导、修改后问老师",
+      "C1": {
+        "appearance_or_read": "A3自报读N2并提问；U4回想与核实",
+        "personal_confirmation_or_applicability": "U4确认发现先于请教，不能量化修订效果",
+        "final_adoption": "正确采用：A13“曾主动发现诱导问法”“修订效果未验证”"
+      },
+      "C2": {
+        "appearance_or_read": "U3本人回忆；A3解读；A6读N2",
+        "personal_confirmation_or_applicability": "U3确认8次、发现并提修改、再问老师",
+        "final_adoption": "正确采用部分：A7概括部分应用研究能力；A6已经具体解读，终段未重述事件"
+      }
+    },
+    {
+      "id": "F11",
+      "topic": "开放选题慢、Python基础/不能独立回归、不喜长期无反馈",
+      "C1": {
+        "appearance_or_read": "U4统计未能独立、愿实际问题和反馈；U5选题拖延及Python基础",
+        "personal_confirmation_or_applicability": "U4/U5；对无反馈的反感主要由反馈偏好支持，没有同样直接的否定句",
+        "final_adoption": "正确采用：A13统计缺口、阶段目标更好；A12路径明确成长与时间风险"
+      },
+      "C2": {
+        "appearance_or_read": "U2选题与Python；U3“最抗拒的是长时间没有反馈”",
+        "personal_confirmation_or_applicability": "U2/U3本人陈述",
+        "final_adoption": "正确采用：A7小型练习与方法成长、反馈安排；未重述具体技能水平"
+      }
+    },
+    {
+      "id": "F12",
+      "topic": "有每周明确目标与反馈能完成，并非普遍拖延",
+      "C1": {
+        "appearance_or_read": "U5；A5解释",
+        "personal_confirmation_or_applicability": "U5；U6明确别人给阶段目标表现更好",
+        "final_adoption": "正确采用：A13有阶段目标时推进更好、独立拆题未知"
+      },
+      "C2": {
+        "appearance_or_read": "U2；A2解释；A6读N5",
+        "personal_confirmation_or_applicability": "U2本人陈述",
+        "final_adoption": "正确采用：A7用具体小任务和复盘验证，不作固定能力标签"
+      }
+    },
+    {
+      "id": "F13",
+      "topic": "旧英语困难更新、六级530、论文仍慢",
+      "C1": {
+        "appearance_or_read": "A3自报读N5；U5给当前状态；A5正确解读",
+        "personal_confirmation_or_applicability": "U5本人陈述",
+        "final_adoption": "正确采用部分：A13英语改善、阅读慢原因未知；未重述530"
+      },
+      "C2": {
+        "appearance_or_read": "A6读N5并正确解读",
+        "personal_confirmation_or_applicability": "U7“英语变化也符合现在的情况”",
+        "final_adoption": "结尾未显式采用；A6已正确更新英语判断，A7未错误沿用旧判断"
+      }
+    },
+    {
+      "id": "F14",
+      "topic": "期末前每周最多8小时",
+      "C1": {
+        "appearance_or_read": "A3自报读N5；U5陈述；A5以8小时提问",
+        "personal_confirmation_or_applicability": "U5；U6再次确认",
+        "final_adoption": "结尾未显式采用：A13无8小时上限，A12也未给准备任务总时数；没有安排超额任务"
+      },
+      "C2": {
+        "appearance_or_read": "A6读N5并询问是否仍适用",
+        "personal_confirmation_or_applicability": "U7确认",
+        "final_adoption": "正确采用：A7安排2+4+1+1=8小时；未留缓冲且反馈资源未落实"
+      }
+    },
+    {
+      "id": "F15",
+      "topic": "2027学费4.8万/年、9.6万两年、非旧3.6万",
+      "C1": {
+        "appearance_or_read": "U7旧信息；A7自报读P1/P3并纠正",
+        "personal_confirmation_or_applicability": "官方虚构资料适用目标项目，无需用户认证价格；U11接受完整资金条件",
+        "final_adoption": "正确采用：A13总成本与预算比较；A7已明确学费和旧信息失效"
+      },
+      "C2": {
+        "appearance_or_read": "U4旧信息；A4自报读P1/P3并纠正",
+        "personal_confirmation_or_applicability": "官方虚构资料适用目标项目；U5承认先前未算清差额",
+        "final_adoption": "正确采用：A7成本/缺口判断；A4明确新旧价格"
+      }
+    },
+    {
+      "id": "F16",
+      "topic": "奖学金至多2.5万/年、竞争、录取后、不保证",
+      "C1": {
+        "appearance_or_read": "A7自报读P1并全部说明",
+        "personal_confirmation_or_applicability": "U8指导资助未落实；U11“不把未确定奖学金算进去”",
+        "final_adoption": "正确采用：A13不保证且两年最高仍超预算；未重述录取后公布"
+      },
+      "C2": {
+        "appearance_or_read": "A4自报读P1并全部说明",
+        "personal_confirmation_or_applicability": "没有逐项用户确认；U5承认学费差额；U7确认资金底线",
+        "final_adoption": "正确采用：A7最高奖仍缺1.4万，新增确定无债资金方可重开比较"
+      }
+    },
+    {
+      "id": "F17",
+      "topic": "硕士1月10日、助研意向12月10日，均晚于offer",
+      "C1": {
+        "appearance_or_read": "A7读P1/P4但仅明说12月10日；A11首次明说1月10日并完整排序",
+        "personal_confirmation_or_applicability": "U8确认助研不能先体验再决定offer；无须本人认证官方截止",
+        "final_adoption": "正确采用：A13列三期限及助研1月15日开始，指出无法先体验再作前面决定"
+      },
+      "C2": {
+        "appearance_or_read": "A4硕士1月10日；A5助研12月10日并指出晚于offer",
+        "personal_confirmation_or_applicability": "U4确认offer截止；公开资料适用；没有逐项用户确认",
+        "final_adoption": "部分采用：A7保留offer/助研意向，未保留硕士1月10日，未指出助研也晚于硕士申请截止"
+      }
+    },
+    {
+      "id": "F18",
+      "topic": "助研1月15日至2月28日、6h/周、总5000、名额经费未定",
+      "C1": {
+        "appearance_or_read": "A7自报读P4并列全",
+        "personal_confirmation_or_applicability": "U8愿争取，6小时可讨论，未获名额且赶不上offer",
+        "final_adoption": "正确采用关键条件：A13未获名额、1月15日开始；时数、结束日、补贴未重述"
+      },
+      "C2": {
+        "appearance_or_read": "A5自报读P4并列全",
+        "personal_confirmation_or_applicability": "U6未确认名额；没有本人确认愿参加或6小时合适",
+        "final_adoption": "正确采用关键条件：A7意向、名额经费未定、不计收入且赶不上offer；时间概括为1—2月"
+      }
+    },
+    {
+      "id": "F19",
+      "topic": "培训续约协调、无保证转岗、晚间支持待书面核实",
+      "C1": {
+        "appearance_or_read": "A7读P2；A8解释职责；U9问晚间频率；A10核实支持情形",
+        "personal_confirmation_or_applicability": "U9本人提出需要确认；U11/U12不愿在任务工时不明时承诺",
+        "final_adoption": "正确采用：A13公司核实任务、反馈、晚间与补偿、退出，转岗无保证"
+      },
+      "C2": {
+        "appearance_or_read": "A4读P2并解释；A5给详细询问清单",
+        "personal_confirmation_or_applicability": "U5不愿只依口头承诺，需知实际任务及支持",
+        "final_adoption": "正确采用：A7岗位本身可接受才考虑，要求任务、晚间、反馈和到手收入"
+      }
+    },
+    {
+      "id": "F20",
+      "topic": "N3不是本人经历；N4与N1同一事件",
+      "C1": {
+        "appearance_or_read": "A5自报读N3/N4并正确区分",
+        "personal_confirmation_or_applicability": "U6明确确认",
+        "final_adoption": "结尾未显式重述，但A13没有把摘录作为弱点或重复增加经历"
+      },
+      "C2": {
+        "appearance_or_read": "A6自报读N3/N4并正确区分",
+        "personal_confirmation_or_applicability": "U7明确确认",
+        "final_adoption": "结尾未显式重述，但A7没有采用错误经历或重复计数"
+      }
+    }
+  ],
+  "critical_timeline": {
+    "C1": {
+      "first_budget_question": "A1宽泛询问不能接受的经济代价；U2给2万+6万及不借债；A2确认8万",
+      "first_offer_deadline_question": "没有在获知offer前直接问其回复期限；A6问工作机会，并在短期体验路径问题中询问申请/开始时间",
+      "first_offer_deadline_user_answer": "U7：11月28日前回复，2027年3月入职",
+      "first_offer_deadline_assistant_use": "A7：体验晚于offer回复日；首次明确复述11月28日为A11",
+      "first_living_cost_question": "此前没有直接问每月生活费；A9问可接受探索期及外部限制，U10给广州2000、深圳4500",
+      "first_cost_gap_calculation": "A7只指出学费9.6万已超8万；A10首次算两年14.4万、无奖缺6.4万、两年最高奖仍缺1.4万",
+      "user_accepts_cost_condition": "U11接受全部成本覆盖且不借债，未单独逐项复算数字",
+      "complete_deadline_order": "A11首次完整串联11/28、12/10、1/10、1/15，并发现体验也晚于申请截止"
+    },
+    "C2": {
+      "first_budget_question": "A3明确问学费生活费可承受额、收入、地点家庭限制；U4回答全部金额",
+      "first_offer_deadline_question": "A3：各自最晚何时决定",
+      "first_offer_deadline_user_answer": "U4：11月28日前回复，2027年3月入职",
+      "first_offer_deadline_assistant_use": "A5首次明确复述11月28日，并说明助研体验赶不上",
+      "first_living_cost_question": "A3问学费与生活费能承受多少；U4给月估算",
+      "first_cost_gap_calculation": "A4首次且完整算两年14.4万、无奖缺6.4万、两年最高奖仍缺1.4万",
+      "user_accepts_cost_condition": "U5承认差额先前未算清；U7重申8万、不借债，未单独逐项复算数字",
+      "complete_deadline_order": "A4给1/10；A5给12/10和1/15—2/28并比较offer；没有显式比较体验与硕士申请截止"
+    }
+  },
+  "strengths": [
+    {
+      "group": "both",
+      "finding": "费用正确且保留不确定性",
+      "evidence": "C1 A7/A10、C2 A4：新学费9.6万，加估算生活费4.8万，总14.4万；8万资金，无奖缺6.4万、最高两年奖5万后仍缺1.4万；资助与5000助研补贴不当确定收入。"
+    },
+    {
+      "group": "both",
+      "finding": "不把未来助研体验当作本月offer决定的先决条件",
+      "evidence": "C1 A7“不能先试完再决定这份offer”；C2 A5“来不及为11月28日…提供体验结果”。"
+    },
+    {
+      "group": "both",
+      "finding": "正确区分个人贡献、来源类型与变化",
+      "evidence": "C1 A3/A5/U6、C2 A6/U7：同伴回归不归功本人；N3摘录、N4重复；英语担忧已更新。没有从8次试访谈跳到独立研究能力。"
+    },
+    {
+      "group": "C1",
+      "finding": "把个人经历的效力和未知界定得更细",
+      "evidence": "A3问发现先后与修订效果，U4确认本人先发现、效果无量化证据；A13“修订效果未验证”；U3未把另外两次都当同样有效；A6停止追问无法回忆的拆题/阅读原因。"
+    },
+    {
+      "group": "C1",
+      "finding": "探索路径预算、接受后退出和申请时序更完整",
+      "evidence": "A11问6万元可否用于求职、2万元覆盖到3月前的开销，U12仍未知；A11说明助研也赶不上1月10日申请，区分申请和入读；A13要求退出条件、家庭支持用途、资助到账时间。"
+    },
+    {
+      "group": "C1",
+      "finding": "路径经过用户确认并依用户要求收束",
+      "evidence": "A12列工作+学习、有限探索+助研、有条件硕士的收益代价；U13确认基本覆盖并请求清单；A13不强作最终去向。"
+    },
+    {
+      "group": "C2",
+      "finding": "更早获取并用于判断决定性约束",
+      "evidence": "A3直接问选项期限和费用；U4/A4即可识别当前硕士缺口，而C1到U10/A10。"
+    },
+    {
+      "group": "C2",
+      "finding": "行动具体并使用8小时上限",
+      "evidence": "A5问新人任务占比、最近一个月支持次数时长、反馈人；A7给11月20/24/27日联系追问复盘和2+4+1+1小时计划，未强迫用户给抽象目标固定排序。"
+    },
+    {
+      "group": "C2",
+      "finding": "清楚说明个人笔记不是独立验证",
+      "evidence": "A6“笔记…和你的口述同属个人记录，不能算独立验证”。"
+    }
+  ],
+  "failures_or_gaps": [
+    {
+      "group": "both",
+      "severity": "none_observed_on_core",
+      "finding": "未发现核心算术错误、颠倒offer与助研时序、把未获奖学金或助研名额当确定，或将摘录和重复事件误用；这是允许范围内的记录判断，不代表独立访问审计。"
+    },
+    {
+      "group": "C1",
+      "severity": "process_cost",
+      "finding": "关键现金流与完整费用核算较晚",
+      "evidence": "A2已知8万硬上限，A7已知新学费；月生活费直到U10才获得并由A10核算。A8/A9继续目标、成长和风险访谈，尚未优先直接补齐生活费；offer期限也未在初期主动直问。"
+    },
+    {
+      "group": "C1",
+      "severity": "handoff_gap",
+      "finding": "结尾未保留每周8小时或助研6小时的时间预算",
+      "evidence": "U5/U6已确认8小时，A13清单未提；不是已安排超负荷，而是执行容量在交接中淡出。"
+    },
+    {
+      "group": "C2",
+      "severity": "conditional_feasibility_gap",
+      "finding": "最终练习计划默认可获得老师反馈",
+      "evidence": "A7分配“请老师反馈1小时”，但U3只证明过去曾问老师，没有当前反馈对象/时间已落实的确认；应表述为待邀请，并准备无及时反馈时的替代。"
+    },
+    {
+      "group": "C2",
+      "severity": "conditional_feasibility_gap",
+      "finding": "放弃或不接受offer后的缓冲资金核查较粗",
+      "evidence": "A7说“同时计算待业资金能撑多久”，但没区分家庭6万是否限读书，也未明确接受offer后的撤回/退出条件；没有直接声称8万全可用于待业，故属缺口而非资金事实错误。"
+    },
+    {
+      "group": "C2",
+      "severity": "handoff_gap",
+      "finding": "未明确助研体验同样赶不上本轮硕士申请，最终也省略1月10日",
+      "evidence": "A4知道1月10日，A5知道1月15日开始，A7只比较offer；没有建议先体验再申请，故不是实际时序矛盾。"
+    },
+    {
+      "group": "C2",
+      "severity": "confirmation_gap",
+      "finding": "助研适合本人及持续指导资源未确认，最终行动方案也未获用户逐项确认",
+      "evidence": "U6仅说未确认名额；A7以可探索提议结束。共同初始请求允许建议，这不构成擅自替用户选择。"
+    },
+    {
+      "group": "both",
+      "severity": "boundary_limit",
+      "finding": "对授权边界仅能审查自报",
+      "evidence": "C1 A2问权限，U3授权，A3/A5报读私笔记；C2 A5问权限，U6授权，A6报读。均在授权后读取2026年相关笔记，未见私人日记、写回或范围外个人材料。"
+    }
+  ],
+  "burden": {
+    "metrics": {
+      "C1": {
+        "assistant_turns": 13,
+        "assistant_characters_no_whitespace": 4325,
+        "question_marks_proxy": 52
+      },
+      "C2": {
+        "assistant_turns": 7,
+        "assistant_characters_no_whitespace": 2315,
+        "question_marks_proxy": 13
+      }
+    },
+    "difference": "C1多6轮、2010非空白字符，字符约多86.8%；问号代理值多39，不能解读为语义问题数或实际耗时。",
+    "C1_review": "A2贡献核查和A3发现先后是有用验证，不算重复失误。A5同时追问拆题、阅读成因、额外限制和评估指标，U6多项未知；A8再次让用户设成果标准，U9仍希望按具体任务定，边际信息较少且负担较高。A9新问探索期预算带来有用信息，但生活费可更早直接获取。A12路径核对有用户确认价值；没有充分证据称后半全部冗余或确切错失某个自然结束点。",
+    "C2_review": "A3一轮集中询问选项、期限、费用、收入、地点家庭，虽轮数少仍是较密集问题；A6让抽象目标排序，U7不能固定排序，A7接受该答案而未追问。A7计划用满8小时未留缓冲，反馈资源待定。",
+    "stop_point": "C1在U13明确要求整理后收尾，C2在U7答约束后收尾。C1获得路径和下一步优先级的用户确认更多，C2结尾未再得到用户接受或拒绝；不据此宣称真实满意度或完成率差异。"
+  },
+  "limitations": [
+    "真实用户体验未测：这不是实际受试者满意度、完成率、耗时、长期决策质量或真实偏好改变的研究。",
+    "全部人物与资料虚构；工具读取为代理自报记录，并非独立强制访问日志，不能核证真实工具调用或声称严格权限执行。",
+    "只读任务授权的判据、oracle、fixtures、两组transcript与metrics，另核验本次创建的两份输出；没有读取其他对话、skill正文、protocol或目录外资料，也未推断组别映射。C1首轮助手文本直接写出“mySWOT”名称；虽然没有提供条件映射，方法线索已经暴露，因此不能称严格盲评，仅属条件映射未提供的独立记录评审。",
+    "单场景、每组一次；不进行统计显著性、一般化因果归因或总营销分数。",
+    "字符和问号来自给定metrics；问号仅机械代理，不代表问题数量或认知负担。",
+    "某事实未在结尾重复不自动算错误；记录了来源出现、本人确认/明确适用、结尾实际采用的区别。可靠公开资料无需用户认证；笔记内容仍需区分本人确认与只读到。",
+    "推荐本身非胜负标准。共同初始请求并未禁止推荐；C1在U13得到暂不最终选择的明确要求，而C2没有同样的后续指令。",
+    "个人事实获取速度受模拟答复内容影响；C1 U7自行带出offer截止、U10带出生活费，不能把这些记成助手精准发问的功劳。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-18",
+  "scenario": "毕业后继续深造还是工作",
+  "arms": {
+    "C1": "with frozen mySWOT v1",
+    "C2": "without any skill",
+    "C3": "with v2; first three assistant turns only",
+    "C4": "with v3; one-turn continuation of identical pre-A3 C3 context"
+  },
+  "model": "same inherited parent model/configuration; no override",
+  "max_assistant_turns": 16,
+  "max_reply_chinese_chars_target": 500,
+  "shared_tools": "read-only local synthetic public fixtures; personal fixtures only after participant authorization; no live web or accounts",
+  "participant": "primary agent answers from frozen oracle only; reveals only facts asked or cued, same rule for both arms",
+  "end_rule": "stop when agent explicitly finishes with no pending question, user requests final at 16-turn cap; do not force baseline to imitate SWOT",
+  "grading": "condition-coded transcripts; independent reviewer gets oracle but not arm mapping or skill; behavior may reveal condition",
+  "limitations": [
+    "one synthetic participant",
+    "one run per condition",
+    "human-like participant supplied by evaluator, not real user",
+    "fixed synthetic documents, not live information retrieval",
+    "no statistical inference or real-user satisfaction claim",
+    "C1 first response explicitly names mySWOT; reviewer was not given mapping but this is not a blind evaluation."
+  ],
+  "skill_sha256": {
+    "LICENSE": "63b7dadcc02a6d805bbed12fe5dfc08493b4d94f2155a5d6721f4aa9b80de1dc",
+    "SKILL.md": "1d75e8565ff3ebeef92d3fdfa3d45c98b83ece154d465271b4a6fb106d19d12d",
+    "agents\\openai.yaml": "3dbbec1c49afa4af6538569b3f9d2b9491eb808da78a550577805cff897870c9",
+    "references\\foundations.md": "6f341d6427c2b731f59ea9dc6113f90d233002f71fa14413a2462b1c119d97d9",
+    "references\\questioning-guide.md": "0d12d469ca98942278334832e234121b66fa71674ca3a6b7ad37f451107d73f4",
+    "references\\retrieval-guide.md": "366ced9e81881cb49c79c002718417220c5845c5f82e99d2270b947e009483d0"
+  },
+  "retest": {
+    "purpose": "targeted regression of early deadlines and feasibility after evidence-backed revision",
+    "version": "v2",
+    "same_initial_prompt_and_oracle": true,
+    "agent_stated_turn_cap": 16,
+    "review_checkpoint": "stop after first 3 assistant responses; incomplete interview, not a full efficacy comparison",
+    "criteria": [
+      "asks nearest real commitment deadline before prolonged quadrant exploration",
+      "checks identified public tuition/aid facts early without treating uncertain aid as guaranteed",
+      "asks missing living expenses and calculates full two-year gap by checkpoint",
+      "does not read private notes before participant consent"
+    ],
+    "pre_retest_note": "Changes and checkpoint targets selected from C1/C2 evidence; this repeats the same case and is not held-out validation.",
+    "skill_sha256": {
+      "LICENSE": "63b7dadcc02a6d805bbed12fe5dfc08493b4d94f2155a5d6721f4aa9b80de1dc",
+      "SKILL.md": "21ca21a679a08cd631da062affd4b92d9b25ec2377f9514c4cceb4f3827945e6",
+      "agents\\openai.yaml": "3dbbec1c49afa4af6538569b3f9d2b9491eb808da78a550577805cff897870c9",
+      "references\\foundations.md": "6f341d6427c2b731f59ea9dc6113f90d233002f71fa14413a2462b1c119d97d9",
+      "references\\questioning-guide.md": "f4e9cf2fa8d02a0ef9e79e3a7f2117fe3421db921efb032d2b5a97fd4ccbd286",
+      "references\\retrieval-guide.md": "2857e25b49cdc0febf3735e5e6390de12cb411382bec7befef9fe5e367f30520"
+    }
+  },
+  "precision_replay": {
+    "reason": "Independent C3 review found estimates described as a lower bound and funding cap described as available cash.",
+    "version": "v3",
+    "scope": "one fresh-agent continuation from replay-context.json; no full rerun",
+    "success_check": "separates cap, available money and timing; marks estimated cost/gap as estimates rather than proven minimum",
+    "observed": "C4 explicitly corrects 80000 available to 20000 available plus up to 60000 pending, and uses approx for cost/gap.",
+    "skill_sha256": {
+      "LICENSE": "63b7dadcc02a6d805bbed12fe5dfc08493b4d94f2155a5d6721f4aa9b80de1dc",
+      "SKILL.md": "6a1f01cdac6aa778477eac81fb063c5d43970390c8bd26ad822804dd22be1291",
+      "agents/openai.yaml": "3dbbec1c49afa4af6538569b3f9d2b9491eb808da78a550577805cff897870c9",
+      "references/foundations.md": "6f341d6427c2b731f59ea9dc6113f90d233002f71fa14413a2462b1c119d97d9",
+      "references/questioning-guide.md": "f4e9cf2fa8d02a0ef9e79e3a7f2117fe3421db921efb032d2b5a97fd4ccbd286",
+      "references/retrieval-guide.md": "2857e25b49cdc0febf3735e5e6390de12cb411382bec7befef9fe5e367f30520"
+    }
+  }
+}

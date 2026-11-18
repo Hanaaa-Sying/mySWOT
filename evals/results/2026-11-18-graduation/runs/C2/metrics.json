@@ -1,0 +1,18 @@
+{
+  "assistant_turns": 7,
+  "assistant_characters_no_whitespace": 2315,
+  "question_marks_proxy": 13,
+  "sources_read_reported": [
+    "N1-2026-03-project.txt",
+    "N2-2026-06-survey.txt",
+    "N3-2026-07-book-excerpt.txt",
+    "N4-2026-09-repost.txt",
+    "N5-2026-10-reflection.txt",
+    "P1-program-2027.txt",
+    "P2-role-2026.txt",
+    "P3-old-blog-2025.txt",
+    "P4-ra-2026.txt"
+  ],
+  "finished": true,
+  "note": "Question marks are a mechanical proxy, not a semantic count; source reads are agent-recorded, not independently enforced access logs."
+}
