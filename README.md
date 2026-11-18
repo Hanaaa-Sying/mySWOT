@@ -10,7 +10,7 @@ mySWOT helps you investigate a career, study, personal, or project decision befo
 
 - Explores Strengths, Weaknesses, Opportunities, and Threats separately, usually for 2–3 rounds each, with 2–3 related questions per round.
 - Checks imminent commitment deadlines and potentially disqualifying budget or eligibility constraints before prolonged exploration of a specific option.
-- Starts with your own recollection. With explicit permission, it can use available personal knowledge sources to surface forgotten experiences and possible S/W clues.
+- First hears your own account of both strengths and difficulties. After you have responded to both, it offers a note search. With your permission, it can use available personal knowledge sources to surface forgotten experiences and possible S/W clues.
 - Searches external sources after your first O/T responses, distinguishes source facts from AI interpretation, and checks whether the findings apply to you.
 - Connects confirmed factors into SO/WO/ST/WT action options, then examines costs, assumptions, reversibility, and trade-offs without ranking your life choices.
 
