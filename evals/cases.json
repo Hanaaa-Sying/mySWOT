@@ -6,7 +6,8 @@
       "id": "personal-stage",
       "prompt": "我工作第二年，一直在给新人做培训。也没什么马上要决定的，就是想盘点自己现在有什么优势和困难，环境里有什么机会和挑战，看看还有哪些走法。",
       "expected_output": "从近期经历了解本人，不要求先定选项或截止日。先听本人对 S/W 的认识，核实相关外部变化，用具体内外部条件解释可采取的行动。对已有的培训方向既检查支持依据也检查反例与边界，让本人辨认哪些方向原先未考虑过。",
-      "status": "not_run"
+      "status": "synthetic_comparison_completed",
+      "results": "results/2026-11-18-personal-stage/report.zh-CN.md"
     },
     {
       "id": "career",

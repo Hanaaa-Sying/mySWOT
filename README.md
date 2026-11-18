@@ -69,7 +69,7 @@ These are instructions for the host agent, not an independently enforced securit
 | Local Codex skill discovery | Original user installation verified on 2026-11-17; public `myswot` package verified as enabled at project scope on 2026-11-18, with no skill-load errors |
 | YAML and local reference integrity | Checked |
 | Scenario review | Manual review using fictional situations |
-| Comparative behavioral evaluations | One synthetic graduation-decision case, one full run per condition, plus targeted regression checks; see the report below |
+| Comparative behavioral evaluations | A personal stage review and a graduation decision, each with one synthetic interview per condition. [Stage review and transcripts](evals/results/2026-11-18-personal-stage/report.zh-CN.md). Graduation results below. |
 | Real-user outcomes | Not yet measured |
 | Other agents and knowledge connectors | Not tested end to end |
 
